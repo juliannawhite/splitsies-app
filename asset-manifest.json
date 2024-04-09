@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/splitsies-app/static/css/main.86a07802.css",
+    "main.js": "/splitsies-app/static/js/main.2027bb90.js",
+    "index.html": "/splitsies-app/index.html",
+    "main.86a07802.css.map": "/splitsies-app/static/css/main.86a07802.css.map",
+    "main.2027bb90.js.map": "/splitsies-app/static/js/main.2027bb90.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.86a07802.css",
+    "static/js/main.2027bb90.js"
+  ]
+}
