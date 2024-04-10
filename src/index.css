@@ -1,0 +1,291 @@
+*, #root {
+  background-color: #EFF8F5;;
+  font-family: courier;
+}
+
+.header {
+  display:flex;
+  justify-content: center;
+  background-color: white;
+}
+
+.header > button {
+  margin:5px;
+}
+
+.person {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  color:black;
+  background-color: white;
+}
+
+.person > h2 {
+  margin-right: auto;
+    background-color: white;
+}
+
+.person > p{
+  font-size: 20px;
+}
+
+.subtotal {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.splitsies {
+    background-color: #EFF8F5;
+    text-align: center;
+    font-family: "Bakbak One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #EFF8F5;
+    font-size: 70px;
+    letter-spacing: 10px;
+    text-shadow: 
+            -2px -2px 0 #B1120E, 2px -2px 0 #B1120E, 
+            -2px 2px 0 #B1120E, 2px 2px 0 #B1120E;
+}
+
+.person > h2, p{
+    font-size: 30px;  
+}
+
+hr {
+    border: 1px dashed #61616d;
+  }
+
+hr.lighter {
+    border: 1px dashed #d6dedb;
+}
+
+.main {
+    width: 70%;
+    padding:20px;
+    margin: 0 auto; 
+    background-color: white;
+    background-size: 20px 20px;
+/*    https://css-generators.com/custom-borders/*/
+  --mask: 
+    conic-gradient(from 135deg at top,#0000,#000 1deg 89deg,#0000 90deg) top/20px 51% repeat-x,
+    conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) bottom/20px 51% repeat-x;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+}
+
+.modalContent {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  width: 50%;    
+    height: 75%;
+    overflow-y: auto;
+  --mask: 
+    conic-gradient(from 157.5deg at top,#0000,#000 1deg 44deg,#0000 45deg) top/8.28px 51% repeat-x,
+    conic-gradient(from -22.5deg at bottom,#0000,#000 1deg 44deg,#0000 45deg) bottom/8.28px 51% repeat-x;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+}
+
+.peopleForms {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.editFormButtons {
+    background-color: white;
+    display: flex;
+    margin-top:20px;
+}
+
+#addButton {
+    margin-right:auto;
+}
+
+
+.modal {
+  position: fixed; 
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%;
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.4);
+}
+
+button {
+  background-color: black;
+  border-radius: 8px;
+  border-style: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  height: 23px;
+  margin: 0;
+  padding: 3px 15px;
+  margin-right:10px;
+  text-align: center;
+}
+
+i {
+    background-color: black;
+}
+
+.trash {
+    margin-left: auto;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.whiteBackground, hr, Subtotal, h1, br, h2, input, h3, .personForm, span, .item, .itemForm, label, .subtotal, .rightContainer, .people {
+    background-color: white ;
+}
+
+
+.itemForm h2 {
+  font-size: 35px;
+}
+
+.itemForm input[type="text"], .itemForm input[type="number"] {
+  width: 60%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.itemForm h3 {
+  font-size: 20px;
+}
+
+.itemForm label {
+  margin-left: 20px;
+    background-color: white;
+}
+
+.people, .items {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    font-size:25px;
+}
+
+.display {
+    font-size: 40px;
+    padding: 0 10px;
+    margin: 0 10px;
+}
+
+.personForm {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+h1 {
+    margin:5px;
+}
+
+.rightContainer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top:10px;
+}
+
+#thankyou {
+    background-color: white;
+    margin:0;
+    color: white;
+    font-size: 40px;
+}
+
+.splitsies {
+    background-color: #EFF8F5;
+    text-align: center;
+    font-family: "Bakbak One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #EFF8F5;
+    font-size: 70px;
+    letter-spacing: 10px;
+    text-shadow: 
+            -2px -2px 0 #B1120E, 2px -2px 0 #B1120E, 
+            -2px 2px 0 #B1120E, 2px 2px 0 #B1120E;
+}
+
+
+.personContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top:20px;
+}
+.
+
+.startForm {
+  text-align: center;
+    
+}
+
+.startForm input[type="number"] {
+  width: 40%;
+  height:40px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+    font-size:40px;
+    text-align: center;
+}
+
+#startModal {
+  margin: 15% auto;
+    height: 45%;
+    font-size: 25px;
+    text-align: center;
+}
+
+.hideText {
+    background-color: black;
+}
+
+@media (max-width: 768px) {
+    .hideText {
+        font-size: 0;
+    }
+    
+    #startModal {
+      margin: 15% auto;
+      height: 65%;
+      font-size: 20px;
+      text-align: center;
+    }
+    
+    .startForm input[type="number"] {
+        font-size:30px;
+    }
+    
+    .display {
+        font-size: 20px;
+        padding: 0 0px;
+        margin: 0 4px;
+    }
+    #toggleMe {
+        font-size:12px;
+        padding:0 10px;
+        margin-left:5px;
+    }
+    
+    .smallerFont {
+        font-size:20px;
+    }
+
+}
