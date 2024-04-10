@@ -5,7 +5,6 @@ import People from "./People"
 import Subtotal from "./Subtotal"
 import PersonForm from "./PersonForm"
 import ItemForm from "./ItemForm"
-import Items from "./Items"
 import EditForm from "./EditForm"
 import TaxTip from "./TaxTip"
 import Footer from "./Footer"
@@ -113,7 +112,7 @@ function addItem(item) {
     item.id=allItems.length
     setItems(prevItems => [...prevItems, item])
     relPeople.map(personId => {
-        setPeople(prevPeople => ({
+        return setPeople(prevPeople => ({
             ...prevPeople, 
             [personId]: {
                 ...prevPeople[personId], 
@@ -143,7 +142,7 @@ function addItem(item) {
         setPeople(peopleDict)
         setScreen("main")
         setSubtotal(0)
-        setItems([])
+        setItems([]) 
     }
     
   return (
@@ -169,7 +168,7 @@ function addItem(item) {
               chosen = {chosen}
               setChosen={setChosen}/>}
         
-          {currScreen != 'start' &&  <div className = "main">
+          {currScreen !== 'start' &&  <div className = "main">
             <Header 
                 setScreen={setScreen}
                 setItemized={setItemized}
@@ -183,7 +182,7 @@ function addItem(item) {
                   tip={tip}
                   total={total}
                   isDone = {isDone}/>
-          <Footer 
+          <Footer
               setScreen={setScreen}
               done = {isDone}
               subtotal={subtotal}/>

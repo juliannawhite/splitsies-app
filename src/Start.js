@@ -9,6 +9,10 @@ export default function PersonForm(props) {
 
     function handleSubmit(event) {
         event.preventDefault()
+        if (!(props.numJoining > 0 && props.numJoining < 100)) {
+            alert("Please input a number between 1 and 100")
+            return
+        }
         props.onFormSubmit()
     }
 

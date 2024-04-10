@@ -2,7 +2,6 @@ import React from "react"
 import ItemizedInfo from "./ItemizedInfo"
 
 export default function People(props) {
-    const itemInfo = props.contributedTo
     const itemizedElems = props.contributedTo.map(itemInfo => (
         <ItemizedInfo 
             key={itemInfo[0]}

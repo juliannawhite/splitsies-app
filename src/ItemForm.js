@@ -9,7 +9,6 @@ export default function ItemForm(props) {
             people: selectedPeople
         }
     )
-    const [isCheckedAll, setIsCheckedAll] = React.useState(false);
 
     function handleChange(event) {
         const {name, value, type, checked} = event.target
@@ -19,7 +18,7 @@ export default function ItemForm(props) {
                 [name]: type === "checkbox" ? checked : value
                 }
         })
-        if (type === "checkbox" && name!="selectAll") {
+        if (type === "checkbox" && name!=="selectAll") {
             const personId = name
             if (checked) {
                 setSelectedPeople(prevSelectedPeople => [...prevSelectedPeople, personId]);
@@ -39,11 +38,22 @@ export default function ItemForm(props) {
 
     function handleSubmit(event) {
         event.preventDefault();
+        
+        if (!(itemFormData.itemCost > 0 && itemFormData.itemCost < 100000)) {
+            alert("Please input a valid cost")
+            return
+        }
+        
+        if (selectedPeople.length===0) {
+            alert("Please select at least one person")
+            return
+        }
+        
         props.onItemFormSubmit({
             name: itemFormData.itemName,
             price: itemFormData.itemCost, 
             people: selectedPeople
-        });
+        }); 
         setItemFormData({
             itemName: "",
             itemCost: ""

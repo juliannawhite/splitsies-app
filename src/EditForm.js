@@ -23,7 +23,7 @@ export default function EditForm(props) {
     
     function editName(id) {
         var newName = prompt(`What would you like ${props.allPeople[id].name}'s new name to be?`);
-        if (newName == "" || newName == null) {
+        if (newName === "" || newName === null) {
             console.log("no name")
             return;
         }
