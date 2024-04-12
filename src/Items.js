@@ -9,4 +9,4 @@ export default function Items(props) {
         </div>
           <hr className="lighter" />
   </div>)
-}
+} 

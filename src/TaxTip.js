@@ -25,6 +25,10 @@ export default function TaxTip(props) {
     
     function handleSubmit(event) {
         event.preventDefault();
+        if ((!(taxFormData.tax > 0 && taxFormData.tax < 100000)) || (!(taxFormData.tip > 0 && taxFormData.tip < 100000))) {
+            alert("Please input a valid tax and tip")
+            return
+        }
         props.onFormSubmit({
             tax: taxFormData.tax,
             tip: taxFormData.tip, 
@@ -44,7 +48,7 @@ export default function TaxTip(props) {
      <h2>Tax + Tip </h2>
             Tip: $ 
          <input
-                type="text"
+                type="number"
                 name="tax"
                 value={taxFormData.tax}
                 onChange={handleChange}
@@ -52,7 +56,7 @@ export default function TaxTip(props) {
             <br />
          Tax: $  
             <input
-                type="text"
+                type="number"
                 name="tip"
                 value={taxFormData.tip}
                 onChange={handleChange}

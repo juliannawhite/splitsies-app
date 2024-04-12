@@ -39,6 +39,12 @@ export default function ItemForm(props) {
     function handleSubmit(event) {
         event.preventDefault();
         
+        
+        if (itemFormData.itemName.length===0) {
+            alert("Please input a valid name")
+            return
+        }
+        
         if (!(itemFormData.itemCost > 0 && itemFormData.itemCost < 100000)) {
             alert("Please input a valid cost")
             return
