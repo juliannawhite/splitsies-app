@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/splitsies-app/static/css/main.3843c586.css",
-    "main.js": "/splitsies-app/static/js/main.6b856b9b.js",
+    "main.js": "/splitsies-app/static/js/main.6d6ab95a.js",
     "index.html": "/splitsies-app/index.html",
     "main.3843c586.css.map": "/splitsies-app/static/css/main.3843c586.css.map",
-    "main.6b856b9b.js.map": "/splitsies-app/static/js/main.6b856b9b.js.map"
+    "main.6d6ab95a.js.map": "/splitsies-app/static/js/main.6d6ab95a.js.map"
   },
   "entrypoints": [
     "static/css/main.3843c586.css",
-    "static/js/main.6b856b9b.js"
+    "static/js/main.6d6ab95a.js"
   ]
 }
