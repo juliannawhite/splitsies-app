@@ -46,7 +46,7 @@ export default function TaxTip(props) {
       <button className = "closeForms" onClick={handleClose}><i className="fa-regular fa-x"></i></button>
      <form className="itemForm">
      <h2>Tax + Tip </h2>
-            Tip: $ 
+            Tax: $ 
          <input
                 type="number"
                 name="tax"
@@ -54,7 +54,7 @@ export default function TaxTip(props) {
                 onChange={handleChange}
             />
             <br />
-         Tax: $  
+         Tip: $  
             <input
                 type="number"
                 name="tip"
